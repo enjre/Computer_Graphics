@@ -1,0 +1,31 @@
+*****************
+* A1 Introduction to WebGL
+* CS464
+* Sept 18 2021
+* Andre Maldonado
+*****************
+
+OVERVIEW:
+    This program is a collection of HTML files that utilize WebGL to rotate shapes, change color with shaders and apply textures to the shapes. 
+
+INCLUDED FILES: 
+    * screenshots of different shaders in 'shader screenshots' folder
+    * box.png - default texture included in project zip
+    * glMAtrix_util.js -
+    * mcstone.png - texture file for cube
+    * README - this file
+    * rotatecube.html - file displaying rotating cube
+    * squarebasepyramid.html - file displaying rotating square-base pyramid
+
+USAGE:
+    To see the shapes, open rotatecube.html or squarebasepyramid.html in browser. Firefox is preferred but Chrome works.
+
+DISCUSSION:
+    I found myself overthinking this project. It looks, complicated but most of the code was already written. It was about knowing where to make small alterations 
+    to get the desired result. Once I figured out where to add the lines to enable the object rotation, I was able to copy and paste the code and comment out the 
+    axes that I did not want to rotate about. I had difficulty getting the textures to appear on my shapes. The chrome commands would not let the textures show on the shapes. 
+    It took me a bit to understand the metrics for the shader values. I am used to rgb 0-255, but in this case there are four values between 0 and 1.0. I used a color code picker to find my desired color then just did some math to convert it into a format that the shaders would take.
+
+SITES USED:
+    * https://htmlcolorcodes.com/
+    * https://www.tutorialspoint.com/webgl/webgl_cube_rotation.htm
