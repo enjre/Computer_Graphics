@@ -1,0 +1,54 @@
+*****************
+* A5 Solar System
+* CS464
+* Nov 20 2021
+* Andre Maldonado
+*****************
+
+OVERVIEW:
+    This program is a WebGL Solar System. It has some mouse controls. 
+
+INCLUDED FILES: 
+    * glMAtrix_util.js - matrix operations file
+    * webgl-utils.js - WebGL utility file
+    * README - this file
+    * index.html - main driver file
+    * functions.js - file containing main js operations and function
+    * shaders/* - folder containing all shader files for pixels and vertices
+    * textures/* - texture files for each planet
+    * SC1, SC2, SC3 - screenshots of the results
+
+USAGE:
+    To see the shapes, open index.html in a browser. Firefox is preferred but Chrome works.
+
+DISCUSSION:
+    For this project, I consulted many online resources. There were existing WebGL System implementations online, but most of them 
+    used other libraries like three.js. I found a useful glMatrix_utils.js file that had a bunch of matrix operations done so that 
+    I did not have to do quite as much low level writing for the operations. I Did have trouble with the lighting however. I wanted 
+    to use three.js for this project because it would have made my index file super simple, but decided against it because I figured
+    it would be a good exercise to do it all myself. I put the functions in a new js file unlike previous projects because the 
+    index file was getting too long to be readable. The same goes for the shaders, I learned that you can put shader functions 
+    into their own files, so I did for organization sake. There are the .frag files for describing the pixel shaders, and the .vert 
+    files for describing the vertext shaders. 
+
+    The distances are not completely to-scale, so there are some instances where the moon will crash into mars or venus, but
+    it just passed through them. I found some planet textures online and used those. I added all of the planets (minus Pluto, which 
+    isn't a planet depending on who you ask). There are controls that allow you to speed up or slow down the orbit, as well as select 
+    which planet the view is focusing on.
+
+
+
+    The controls are as follows: 
+    - Mouse wheel to zoom in and out
+    - Click and drag to change view
+    - Drag the speed slider at the bottom left to adjust the orbital speeds (0-10)
+    - Click the name of the planet at the top right pane to select your central planet
+
+
+SITES USED:
+    * https://htmlcolorcodes.com/
+    * https://glmatrix.net/docs/module-glMatrix.html
+    * https://fileinfo.com/extension/frag#:~:text=A%20FRAG%20file%20contains%20fragment,FSH%20files.
+    * http://chrisbashton.github.io/solar-system-webgl/documentation/Report.pdf
+    * http://thenewcode.com/1176/A-WebGL-Tour-of-the-Solar-System-Mars-Part-One
+    * https://gist.github.com/pbfy0/3a1717978fc68adaa7a878a2089db731
